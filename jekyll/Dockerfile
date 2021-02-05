@@ -36,6 +36,9 @@ RUN rbenv rehash
 
 RUN gem install bundler jekyll
 
+RUN git config --global user.name hyunseoki
+RUN git config --global user.email hyunseoki@kaist.ac.kr
+
 CMD ["/bin/bash"]
 
 

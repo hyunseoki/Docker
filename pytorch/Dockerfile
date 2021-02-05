@@ -11,4 +11,7 @@ RUN pip install \
     opencv-python \
     tensorflow==2.3.0
 
+RUN git config --global user.name hyunseoki
+RUN git config --global user.email hyunseoki@kaist.ac.kr
+
 CMD ["/bin/bash"]

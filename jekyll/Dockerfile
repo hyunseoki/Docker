@@ -1,6 +1,8 @@
 # https://jerry901.github.io/2020/01/2020-01-26-02/ 내용을 도커로 그대로 옮겨 놓은 것
 FROM ubuntu:18.04
 
+RUN sed -i "s/archive.ubuntu.com/mirror.kakao.com/g" /etc/apt/sources.list
+
 RUN apt-get update -y
 RUN apt-get install -y  \
     git-core \
